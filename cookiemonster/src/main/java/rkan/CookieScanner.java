@@ -12,6 +12,7 @@ public class CookieScanner {
 
     /**
      * Creates an instance of CookieScanner that reads cookies from file.
+     * Call close after scanner has been used.
      * @param cookieFile The file to read cookies from
      * @throws FileNotFoundException if cookieFile is not found
      */
@@ -34,7 +35,10 @@ public class CookieScanner {
         } catch (ArrayIndexOutOfBoundsException e) {
             throw new CookieLogFormatException(String.format("Expected format was 'cookiestring,UTCtimestampwithoffset', actual log was '%s'", line ));
         }
+    }
 
+    public void close(){
+        scanner.close();
     }
 }
 

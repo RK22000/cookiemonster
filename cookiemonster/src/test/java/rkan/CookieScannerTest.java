@@ -22,8 +22,10 @@ class CookieScannerTest {
 
         CookieScanner scanner = new CookieScanner(new File(String.valueOf(cookieTestLogFile)));
         Cookie firstCookie = scanner.nextCookie();
+        scanner.close();
 
         assertEquals("Cookie{COOKIE='AtY0laUfhglK3lC7', timeStamps=[2018-12-09T14:19Z]}"
                 , firstCookie.toString());
+
     }
 }
