@@ -9,10 +9,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class CookieTest {
 
     @Test
-    void getCOOKIE() {
+    void testConstructor() {
         Cookie cookie = new Cookie("AtY0laUfhglK3lC7", "2018-12-09T14:19:00+00:00");
         assertEquals("Cookie{COOKIE='AtY0laUfhglK3lC7', timeStamps=[2018-12-09T14:19Z]}",
                 cookie.toString());
+    }
+    @Test
+    void getCOOKIE() {
+        Cookie cookie = new Cookie("AtY0laUfhglK3lC7", "2018-12-09T14:19:00+00:00");
+        assertEquals("AtY0laUfhglK3lC7",
+                cookie.getCOOKIE());
     }
 
     @Test
