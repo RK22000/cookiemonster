@@ -15,7 +15,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 
-@Command(name = "cookiemonster", description = "...",
+@Command(name = "most_active_cookie", description = "Gets the most active cookie in a log file on a given day",
         mixinStandardHelpOptions = true)
 public class CookiemonsterCommand implements Runnable {
 
