@@ -1,5 +1,4 @@
-Main directory structure
-
+### Main directory structure
 
 src
 
@@ -15,7 +14,7 @@ src
 
 |  |  |-CookieScanner.java
 
-|  |  |-CookiemonsterCommand.java
+|  |  \-CookiemonsterCommand.java
 
 |  \resources (empty for now)
 
@@ -31,3 +30,9 @@ src
 
 cookie_log_1.csv  (file used in testing)
 
+# Build instructions
+To build the project run 
+
+  .\gradlew --no-daemon assemble
+ 
+ in the terminal in this directory. This will build the project in build/libs directory. The jar named like \*-all.jar will be a jar file that can be run with java -jar command.
