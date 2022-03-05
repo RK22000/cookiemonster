@@ -1,9 +1,18 @@
-## Micronaut 3.3.4 Documentation
+Main directory structure
 
-- [User Guide](https://docs.micronaut.io/3.3.4/guide/index.html)
-- [API Reference](https://docs.micronaut.io/3.3.4/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/3.3.4/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
 
-- [Shadow Gradle Plugin](https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow)
+src
+|-main
+|  |-java/rakn
+|  |  |-Cookie.java
+|  |  |-CookieLogFormatException.java
+|  |  |-CookieMonster.java
+|  |  |-CookieScanner.java
+|  |  |-CookiemonsterCommand.java
+|  \resources (empty for now)
+\-test/java/rkan
+   |-CookieMonsterTest.java
+   |-CookieScannerTest.java
+   |-CookieTest.java
+   \-CookiemonsterCommandTest.java
+cookie_log_1.csv  (file used in testing)
