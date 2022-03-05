@@ -18,11 +18,11 @@ public class CookiemonsterCommandTest {
         System.setOut(new PrintStream(baos));
 
         try (ApplicationContext ctx = ApplicationContext.run(Environment.CLI, Environment.TEST)) {
-            String[] args = new String[] { "-v" };
+            String[] args = new String[] { "cookie_log_1.csv", "-d", "2018-12-09" };
             PicocliRunner.run(CookiemonsterCommand.class, ctx, args);
 
             // cookiemonster
-            assertTrue(baos.toString().contains("Hi!"));
+            assertTrue(baos.toString().contains("AtY0laUfhglK3lC7"));
         }
     }
 }
