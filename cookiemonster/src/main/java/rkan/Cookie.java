@@ -1,6 +1,5 @@
 package rkan;
 
-import java.time.Instant;
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeParseException;
 import java.util.TreeSet;
@@ -43,6 +42,21 @@ public class Cookie {
 
     public int getActivity() {
         return timeStamps.size();
+    }
+
+    @Override
+    public int hashCode() {
+        return COOKIE.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        try {
+            return ((Cookie) o).getCOOKIE().equals(COOKIE);
+        } catch (ClassCastException e) {
+            return false;
+        }
     }
 
     /**

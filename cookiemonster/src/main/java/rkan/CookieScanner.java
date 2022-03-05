@@ -37,6 +37,10 @@ public class CookieScanner {
         }
     }
 
+    public boolean hasNextLine() {
+        return scanner.hasNextLine();
+    }
+
     public void close(){
         scanner.close();
     }
